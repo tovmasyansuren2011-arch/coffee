@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee — Personal Knowledge Vault</title>
+
+    <!-- Minimalist Coffee Bean Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B8895B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2C6.5 2 3 6.5 3 12s3.5 10 9 10 9-4.5 9-10-3.5-10-9-10z' transform='rotate(-30 12 12)'/%3E%3Cpath d='M12 4c-2 3.5-1.5 6.5 0 9.5s2 6 0 7.5' transform='rotate(-30 12 12)'/%3E%3C/svg%3E"
+    />
+
+    <link rel="stylesheet" href="src/styles/fonts.css" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="src/styles/home.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Fixed Left Sidebar (250px) -->
+      <aside
+        class="app-sidebar"
+        id="sidebar"
+        aria-label="Main Navigation"
+      ></aside>
+
+      <!-- Mobile Drawer Overlay -->
+      <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+      <!-- Main Workspace -->
+      <main class="app-main">
+        <header class="main-topbar">
+          <div class="topbar-left">
+            <button
+              type="button"
+              class="mobile-menu-btn"
+              id="mobile-toggle-btn"
+              aria-label="Toggle navigation menu"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+            </button>
+            <nav
+              class="breadcrumbs"
+              id="breadcrumbs"
+              aria-label="Breadcrumb"
+            ></nav>
+          </div>
+
+          <div class="topbar-right">
+            <div
+              class="autosave-status is-saved"
+              id="global-autosave-pill"
+              title="All notes and library items persist in browser localStorage"
+            >
+              <span class="autosave-dot"></span>
+              <span class="autosave-label">Saved</span>
+            </div>
+          </div>
+        </header>
+
+        <div
+          class="main-viewport"
+          id="viewport"
+          role="region"
+          aria-label="Workspace Content"
+        ></div>
+      </main>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

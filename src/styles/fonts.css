@@ -1,0 +1,32 @@
+/* Bundled fonts use the SIL Open Font License; see src/fonts/*-OFL.txt. */
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa.ttf") format("truetype");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans Armenian";
+  src: url("../fonts/NotoSansArmenian.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Comic Neue";
+  src: url("../fonts/ComicNeue.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.rich-notes {
+  font-family: Arial, "Noto Sans Armenian", sans-serif;
+}

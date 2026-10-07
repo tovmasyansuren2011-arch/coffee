@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width"
+  /><title>Coffee browser verification</title
+  ><style>
+    body {
+      font: 15px system-ui;
+      max-width: 920px;
+      margin: 40px auto;
+      padding: 24px;
+      background: #f6f1e8;
+      color: #352c22;
+    }
+    li {
+      padding: 9px;
+    }
+    h1 {
+      font: 32px Georgia;
+    }
+    #fixtures {
+      position: relative;
+      margin-top: 30px;
+    }
+    #fixtures:empty {
+      display: none;
+    }
+    .passed {
+      color: #38652b;
+    }
+    .failed {
+      color: #9f352b;
+    }
+  </style>
+  <h1>Coffee browser verification</h1>
+  <p>Dedicated test workspace. These checks run only on localhost port 3002.</p>
+  <ol id="results"></ol>
+  <p id="summary">Running…</p>
+  <div id="app"><div id="fixtures"></div></div>
+  <script type="module" src="./browser-tests.js"></script>
+</html>

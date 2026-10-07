@@ -1,0 +1,24 @@
+{
+  "name": "coffee",
+  "version": "6.0.2",
+  "description": "Coffee \u2014 Personal Knowledge Management for Books, Courses & Videos, and Lessons",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test.js && node test-features.js && node test-reliability.js && node test-server.js"
+  },
+  "keywords": [
+    "knowledge-management",
+    "notes",
+    "books",
+    "learning",
+    "local-storage"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
